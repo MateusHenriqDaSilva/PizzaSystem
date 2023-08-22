@@ -1,0 +1,26 @@
+.conteudoCabecalho {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+}
+
+.conteudoPrincipal{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.espacoReserva{
+    height: 500px;
+    width: 500px;
+    color: black;
+    border-radius: 10px;
+}
+
+.espacoFora{
+    padding: 50px;
+}

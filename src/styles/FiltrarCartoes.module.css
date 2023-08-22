@@ -1,0 +1,68 @@
+.conteudoPorId{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.passos{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;     
+    text-align: left;
+    margin: 0px;
+    color: white;
+    background: #b8b8b8;
+    width: 900px;
+    padding: 5px 20px;
+    color: white;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;    
+}
+
+.cabecalhoTitulo{
+    justify-content: center;
+    text-align: center;
+    font-size: 26px;
+}
+
+.passos:hover{ 
+    margin: 0px;
+    width: 900px;
+    padding: 0px 30px;
+    background: #393e46;
+    padding: 5px 20px;
+    color: white;
+    margin: 5px;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 10px;
+}
+
+.conteudoTexto{
+    padding: 0px;
+}
+
+.conteudoTotal{
+    display: flex;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.conteudoPassos{
+    display: flex;
+    height: 100vh;
+    padding: 0px 0px 0px 10px;
+    margin: 0px;
+    width: 50%;
+}
+
+.conteudoSlider{
+    display: flex;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    width: 50%;
+}

@@ -1,0 +1,11 @@
+.cabecalho{
+    display: flex;
+    background: #722f37;
+    width: 100%;
+    height: 80px;
+    color: white;
+}
+
+.titulo{
+    padding: 0px 0px 0px 50px;
+}

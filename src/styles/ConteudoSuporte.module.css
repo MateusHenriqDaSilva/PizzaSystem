@@ -1,0 +1,9 @@
+.conteudoSuporte{
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna2{
+    display: flex;
+    flex-direction: row;
+}

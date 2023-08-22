@@ -1,0 +1,37 @@
+.menuItem{
+    height: 20px;    
+    width: 80px;
+}
+
+.icone{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 80px;
+    width: 100px;
+    margin: 0px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.icone:hover{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 80px;
+    width: 100px;
+    margin: 0px;
+    cursor: pointer;
+    justify-content: center;
+    background: #ffadad;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    margin: 0px;
+    cursor: pointer;
+}
