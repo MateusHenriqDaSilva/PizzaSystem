@@ -2,14 +2,13 @@ import { useState, useEffect } from "react"
 import style from '../../styles/CadastrarReserva.module.css'
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 import Image from 'next/image'
-import fundo1 from '../../styles/../../public/lugar.jpeg'
+import fundo1 from '../../styles/../../public/lugar.png'
 import DatePicker from "react-datepicker";
 import fundo2 from '../../../public/fundo.jpeg'
 import Cliente from '../../class/Clientes'
 import "react-datepicker/dist/react-datepicker.css";
 import Confetti from 'react-confetti'
-import fundo3 from '../../../public/fundo3.jpeg'
-
+import fundo3 from '../../../public/pizza.png'
 
 export default function CadastrarReserva() {
     const [selecionado, setSelecionado] = useState(0)
@@ -30,7 +29,7 @@ export default function CadastrarReserva() {
         setShowModal(true);
     };
 
-    new Cliente({ codigo: 1, titular: 'pedro', convidados: 10, kids: true })
+    new Cliente({ codigo: 1, titular: titular, convidados: contador, kids: checked })
 
     useEffect(() => {
         if (selecionado === 1) {
@@ -169,12 +168,15 @@ export default function CadastrarReserva() {
                         >
                         </Image>
                         <div className={style.espacoConteudo}>
-                            <h1 className={style.titulo}>política de reservas. Caso não cheguem até as 19h30 para acomodação, os lugares serão liberados para a fila de espera, caso tenha.</h1>
+                            <h1 className={style.cabecalho}>
+                            Política de reservas
+                            </h1>
+                            <h1 className={style.titulo}>Caso não cheguem até as 19h30 para acomodação, os lugares serão liberados para a fila de espera, caso tenha.</h1>
                             <h1 className={style.descricao}>- Toda cortesia e desconto será cedido apenas mediante comprovação de documento com foto. Ex: Aniversário, crianças etc.</h1>
                             <h1 className={style.descricao}>- Lembrando que pedimos que ao menos 50% da mesa esteja acomodada neste horário das 19h30. A partir das 20h, iremos movimentar a fila de espera com os lugares que sobram, caso a tenha.</h1>
                             <h1 className={style.descricao}>Nossas reservas estão esgotadas. Isso não significa que não poderão vir. Nós reservamos 55% da nossa capacidade, deixando os demais lugares livres para ocupação conforme chegada na casa. Abrimos a casa as 18h40. Quanto antes chegarem, mais chances de se acomodarem mais rapido ou até mesmo pegar livre na hora ainda.</h1>
-                            <h1 className={style.titulo}>Nossa pizzaria tem uma política de avaliação geral sempre visando o melhor atendimento dos nossos clientes e através dela notamos a necessidade de não trabalhar com reservas aos sábados. Organize sua agenda e venha mais cedo para nossa casa... Estaremos prontos a sua espera.</h1>
-                            <h1 className={style.titulo}>TODO DESCONTO É CEDIDO SOMENTE COM APRESENTAÇÃO DE DOCUMENTO COM FOTO PARA O ATENDENTE !!!</h1>
+                            <h1 className={style.titulo}>- Nossa pizzaria tem uma política de avaliação geral sempre visando o melhor atendimento dos nossos clientes e através dela notamos a necessidade de não trabalhar com reservas aos sábados. Organize sua agenda e venha mais cedo para nossa casa... Estaremos prontos a sua espera.</h1>
+                            <h1 className={style.cabecalho}>TODO DESCONTO É CEDIDO SOMENTE COM APRESENTAÇÃO DE DOCUMENTO COM FOTO PARA O ATENDENTE !!!</h1>
                             <div className={style.espacoCheckbox}>
                                 <input className={style.checkbox} type="checkbox" checked={checked} onChange={handleCheckboxChange} />
                                 <h1 className={style.descricao}>Eu aceito os termos de condição</h1>

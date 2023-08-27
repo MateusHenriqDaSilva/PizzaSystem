@@ -7,20 +7,27 @@
     padding: 0px;
 }
 
-.conteudoPrincipal{
+.conteudoPrincipal {
     display: flex;
     height: 100vh;
     width: 100%;
     flex-direction: column;
 }
 
-.espacoReserva{
+.espacoReserva {
     height: 500px;
     width: 500px;
     color: black;
     border-radius: 10px;
 }
 
-.espacoFora{
+.espacoFora {
     padding: 50px;
 }
+
+.tabela {
+    background: black;
+    color: white;
+}
+
+.item {}
